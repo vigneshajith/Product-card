@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  margin: 20px auto;
+  line-height: 1;
+  display: block;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.topp {
+  letter-spacing: 7px;
+}
+.parent-container{
+  display: flex;
+  border-radius: 10px;
+  margin: 5% auto;
+   width: 600px;
+  height: 450px;
+  
+}
+.child-container {
+ width: 50%;
+ height: 100%;
+  border-radius: 10px;
+ 
+ 
+}
+.image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* object-fit: cover; */
+}
+.texts {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.gsg {
+  color: hsl(212, 21%, 14%);
+  color: hsl(0, 0%, 100%);
+  color: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+}
+.greenbtn {
+  display: inline-block;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border: 0;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 15px 0;
+}
+.greenbtn:hover{
+  background-color: hsl(132, 21%, 14%);
+  
+}
+.pricebox {
+  display: flex;
+  margin: 25px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price1 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+.price2 {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+@media  (max-width : 700px)  {
+  .parent-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 10% 35% ;
+   width: 600px;
+  height: 450px;
+  
+}
+.child-container {
+ width: 60%;
+ height: 100%;
+}
+  .image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+}
